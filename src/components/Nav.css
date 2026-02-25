@@ -215,6 +215,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  margin-top: 10px;
 }
 
 .mobile-checkout-btn i {
@@ -232,6 +233,10 @@
   .navbar {
     padding: 12px 16px;
   }
+    .mobile-menu-overlay {
+    top: 52px;
+  }
+
 
   .nav-container {
     gap: 16px;

@@ -509,34 +509,42 @@
     gap: 24px;
   }
 
-  .cart-item-card {
-    grid-template-columns: 70px 1fr;
-    gap: 12px;
-    padding: 16px;
-  }
+ .cart-item-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px;
+}
 
-  .item-quantity,
-  .item-subtotal,
-  .delete-btn {
-    grid-column: span 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
+.item-image {
+  width: 100%;
+  height: 180px;
+}
 
-  .qty-controls {
-    grid-column: 1;
-  }
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .subtotal-value {
-    grid-column: 2;
-    text-align: right;
-  }
+.item-quantity,
+.item-subtotal,
+.delete-btn {
+  width: 100%;
+  margin-left: 0;
+}
 
-  .delete-btn {
-    grid-column: span 2;
-  }
+.item-quantity {
+  align-items: flex-start;
+}
 
+.delete-btn {
+  align-self: flex-end;
+}
+
+.cart-items-list {
+  gap: 20px;
+}
   .summary-box {
     padding: 16px;
   }
