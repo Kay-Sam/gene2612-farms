@@ -8,6 +8,7 @@
   z-index: 999;
   animation: slideIn 0.4s ease forwards;
   opacity: 0; /* start invisible */
+  overflow: hidden;
 }
 
 @keyframes slideIn {
