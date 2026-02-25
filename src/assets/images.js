@@ -28,13 +28,13 @@ import peas1 from './images/peas.jpg'
 import peas2 from './images/peas.jpg'
 import peas3 from './images/peas.jpg'
 
-import hp1 from './images/habanero pepper.jpg'
-import hp2 from './images/habanero pepper2.jpg'
-import hp3 from './images/habanero pepper.jpg'
+import hp1 from './images/Habanero pepper.jpg'
+import hp2 from './images/Habanero pepper2.jpg'
+import hp3 from './images/Habanero pepper.jpg'
 
 import b1 from './images/bell pepper.jpg'
 import b2 from './images/bell pepper1.jpg'
-import b3 from './images/bell pepper2.jpg'
+import b3 from './images/Bell pepper2.jpg'
 
 import herb1 from './images/Herbs.jpg'
 import herb2 from './images/Herbs.jpg'
@@ -51,8 +51,8 @@ import person2 from './images/hero2.jpg'
 
 // ================= GALLERY IMAGES =================
 import harvest1 from './images/hero1.jpg'
-import harvest2 from './images/habanero pepper.jpg'
-import harvest5 from './images/tomatoes.jpg'
+import harvest2 from './images/Habanero pepper.jpg'
+import harvest5 from './images/Tomatoes.jpg'
 import harvest3 from './images/hero3.jpeg'
 import process1 from './images/Gallery.jpg'
 import process2 from './images/growbag.jpg'
