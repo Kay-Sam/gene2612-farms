@@ -83,7 +83,8 @@
   background: #2c7a2c;
   color: white;
   border: none;
-  margin: 0 0px;
+  margin: 0 -20px;
+  z-index: 10;
   transition: 0.3s;
    font-size: 18px;
 }

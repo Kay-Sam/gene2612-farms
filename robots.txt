@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gene2612farms.com.ng/sitemap.xml
