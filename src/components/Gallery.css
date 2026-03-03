@@ -51,15 +51,15 @@
 
 .modal-close {
   position: absolute;
-  padding: 5px;
+  padding: 10px;
   top: 18px; 
   right: 18px;
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  background: rgba(16, 185, 129, 0.226);
-  border: 1px solid rgba(0, 252, 168, 0.3);
-  border-radius: 2px;
+  background: rgb(92, 9, 9);
+  color: white;
+  border-radius: 6px;
 }
 
 
