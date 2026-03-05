@@ -13,6 +13,7 @@
 .cart-icon-btn {
   background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(52, 211, 153, 0.1));
   border: 1.5px solid rgba(16, 185, 129, 0.3);
+  color: #baf0be;
   cursor: pointer;
   position: relative;
   font-size: 1.6rem;
