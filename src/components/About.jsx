@@ -1,6 +1,6 @@
 import React from 'react' 
 import './About.css'
-import aboutImage from '../assets/images/about.jpeg' // Replace with your farm image
+import aboutImage from '../assets/images/about.jpeg' 
 
 export default function About() {
   return (
