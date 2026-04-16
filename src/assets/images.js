@@ -83,7 +83,7 @@ export const products = [
     id: 2,
     name: "Fresh Yam",
     // price: "₦3,500",
-    desc: "healthy yam grown with care.",
+    desc: "Healthy yam grown with care.",
     inStock: false,
     // availableDate: "2026-03-15",
     images: [yam1, yam2, yam3]
