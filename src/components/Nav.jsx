@@ -19,8 +19,8 @@ export default function Nav({ onCartClick }) {
       <nav className="navbar">
         <div className="nav-container">
           {/* Logo - Left */}
-    <div className="nav-brand">
-      <img src={logo} alt="Gene2612 Farms Logo" className="brand-logo" />
+    <div className="nav-brand" onClick={() => scrollToSection('hero')}>
+      <img src={logo} alt="Gene2612 Farms Logo" className="brand-logo"/>
     </div>
 
           {/* Desktop Navigation - Center */}

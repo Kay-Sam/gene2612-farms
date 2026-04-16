@@ -41,6 +41,10 @@
 }
 
 .floating-btn.top {
-  background: #111;
+  background: #ffffff;
+  color: #333;
   border: none;
+    width: 44px;
+  height: 44px;
+  margin-left: 2px;
 }
