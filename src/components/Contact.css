@@ -1,10 +1,26 @@
 .contact {
-  padding: 80px 24px;
+  padding: 50px 24px;
+  background: #f8fafc;
 }
 
+/* Section title */
 .contact h2 {
   text-align: center;
   margin-bottom: 60px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  position: relative;
+}
+
+.contact h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #16a34a;
+  margin: 10px auto 0;
+  border-radius: 5px;
 }
 
 /* Contact Wrapper - 2 Column Layout */
@@ -16,66 +32,71 @@
   margin: 0 auto;
 }
 
-/* Left Column - Contact Info */
+/* ===================== */
+/* LEFT COLUMN - INFO */
+/* ===================== */
+
 .contact-info {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
+/* Clean modern cards */
 .info-card {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 16px;
   padding: 24px;
   transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
 }
 
 .info-card:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(16, 185, 129, 0.2);
   transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  border-color: #cbd5e1;
 }
 
 .info-icon {
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin-bottom: 12px;
-  display: block;
+  color: #16a34a;
 }
 
 .info-card h3 {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   font-size: 1.1rem;
-  color: #e2e8f0;
+  color: #0f172a;
   font-weight: 600;
 }
 
 .info-card p {
   margin: 0;
-  color: var(--muted);
+  color: #64748b;
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
 .info-card a {
-  color: var(--accent-light);
+  color: #16a34a;
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: 0.2s;
 }
 
 .info-card a:hover {
-  color: #34d399;
+  color: #15803d;
   text-decoration: underline;
 }
 
-/* Social Links */
+/* Social card */
 .info-card.social {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(52, 211, 153, 0.08));
-  border-color: rgba(16, 185, 129, 0.2);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
 }
 
+/* Social Links */
 .social-links {
   display: flex;
   gap: 12px;
@@ -88,21 +109,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(16, 185, 129, 0.1);
-  border: 1.5px solid rgba(16, 185, 129, 0.3);
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
   border-radius: 10px;
   font-size: 1.2rem;
+  color: #16a34a;
   transition: all 0.3s ease;
-  color: var(--accent-light);
 }
 
 .social-links a:hover {
-  background: rgba(16, 185, 129, 0.2);
-  border-color: rgba(16, 185, 129, 0.5);
+  background: #16a34a;
+  color: #fff;
   transform: translateY(-4px);
 }
 
-/* Right Column - Contact Form */
+/* ===================== */
+/* RIGHT COLUMN - FORM */
+/* ===================== */
+
 .contact-form-wrapper {
   display: flex;
   flex-direction: column;
@@ -115,26 +139,28 @@
 .form-header h3 {
   margin: 0 0 8px;
   font-size: 1.4rem;
-  color: #e2e8f0;
+  color: #0f172a;
 }
 
 .form-header p {
   margin: 0;
-  color: var(--muted);
+  color: #64748b;
   font-size: 0.95rem;
 }
 
+/* Form card */
 .contact-form {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 16px;
   padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
 }
 
+/* Form fields */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -144,15 +170,16 @@
 .form-group label {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #cbd5e1;
+  color: #475569;
 }
 
+/* Inputs */
 input,
 textarea {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1.5px solid rgba(255, 255, 255, 0.1);
-  color: #e2e8f0;
-  padding: 12px 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
+  padding: 12px 14px;
   border-radius: 10px;
   font-family: inherit;
   font-size: 0.95rem;
@@ -161,44 +188,52 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: rgba(226, 232, 240, 0.4);
+  color: #94a3b8;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: rgba(16, 185, 129, 0.5);
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
 }
 
+/* Error states */
 input.error,
 textarea.error {
-  border-color: rgba(239, 68, 68, 0.5);
-  background: rgba(239, 68, 68, 0.05);
-}
-
-input:disabled,
-textarea:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+  border-color: #ef4444;
+  background: #fff5f5;
 }
 
 .error-text {
   font-size: 0.85rem;
-  color: #fca5a5;
+  color: #ef4444;
   margin-top: -6px;
 }
 
+/* Textarea */
 textarea {
   min-height: 140px;
   resize: vertical;
-  font-family: inherit;
 }
 
+/* Button */
 .contact .btn {
-  margin-top: 8px;
+  margin-top: 10px;
   width: 100%;
+  background: #14853d;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact .btn:hover {
+  background: #15803d;
+  transform: translateY(-2px);
 }
 
 .contact .btn:disabled {
@@ -206,70 +241,33 @@ textarea {
   cursor: not-allowed;
 }
 
-/* Responsive Design */
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
 @media (max-width: 900px) {
   .contact-wrapper {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-
-  .info-card {
-    padding: 20px;
-  }
-
-  .contact-form {
-    padding: 24px;
-  }
 }
 
 @media (max-width: 600px) {
-  .contact {
-    padding: 60px 16px;
-  }
 
   .contact h2 {
-    margin-bottom: 40px;
-  }
-
-  .contact-wrapper {
-    gap: 30px;
-  }
-
-  .info-card {
-    padding: 16px;
-  }
-
-  .info-icon {
-    font-size: 2rem;
-    margin-bottom: 8px;
-  }
-
-  .info-card h3 {
-    font-size: 1rem;
-    margin-bottom: 8px;
-  }
-
-  .info-card p {
-    font-size: 0.9rem;
-  }
-
-  .form-header h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .contact-form {
     padding: 20px;
-    gap: 16px;
   }
 
-  .form-group {
-    gap: 6px;
+  .info-card {
+    padding: 18px;
   }
 
   input,
   textarea {
-    padding: 10px 12px;
     font-size: 16px;
   }
 }
-

@@ -3,7 +3,7 @@
   --bg:#011b11; 
   --accent:#10b981; 
   --accent-light:#a7f3d0;
-  --muted:#94a3b8; 
+  --muted:#535252; 
   --card:rgba(255,255,255,0.08);
   --card-dark:#011b11;
 }
@@ -40,13 +40,14 @@ img{
 }
 
 .section h2{ 
-  margin:0 0 12px; 
   font-size:2rem;
   font-weight:700;
-  background:linear-gradient(135deg, #10b981, #a7f3d0);
+  background:linear-gradient(135deg, #10b981, #2f7353);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
+
+  
 }
 
 .section p{ 

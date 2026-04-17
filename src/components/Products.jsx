@@ -38,7 +38,7 @@ export default function Products() {
       <div className="container">
         <h2>Our Products</h2>
 
-        <div className="grid">
+        <div className="grid slide-top">
           {products.map((p) => (
             <div className="card" key={p.id}>
               <div style={{ position: 'relative' }}>

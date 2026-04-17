@@ -95,7 +95,7 @@ export default function Contact(){
                 <input 
                   id="name"
                   type="text"
-                  placeholder="John Doe" 
+                  placeholder="Enter Full Name" 
                   value={name} 
                   onChange={e => setName(e.target.value)}
                   className={errors.name ? 'error' : ''}
@@ -109,7 +109,7 @@ export default function Contact(){
                 <input 
                   id="email"
                   type="email"
-                  placeholder="john@example.com" 
+                  placeholder="gene2612farms@gmail.com" 
                   value={email} 
                   onChange={e => setEmail(e.target.value)}
                   className={errors.email ? 'error' : ''}

@@ -3,19 +3,53 @@ import './Hero.css'
 import { hero1, hero2, hero3 } from '../assets/images'
 import { showToast } from '../utils/toast'
 
-export default function Hero(){
+export default function Hero() {
 
-  const images = [hero1, hero2, hero3]
+  //farm slides
+const slides = [
+  {
+    image: hero1,
+    title: "Good for You, Good for the Planet",
+    text: "Naturally grown and harvested daily"
+  },
+  {
+    image: hero2,
+    title: "Organic Farm Produce You Can Trust",
+    text: "Sweet, healthy, and chemical-free"
+  },
+  {
+    image: hero3,
+    title: "Eat Fresh. Live Healthy.",
+    text: "Quality food straight from our farm"
+  }
+]
+
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
 
+  // Auto slide (with pause on hover)
   useEffect(() => {
+    if (isPaused) return
+
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length)
-    }, 3000) 
+      setCurrentIndex((prev) => (prev + 1) % slides.length)
+    }, 4000)
 
     return () => clearInterval(interval)
-  }, [])
+  }, [isPaused, slides.length])
 
+  // Navigation
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % slides.length)
+  }
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) =>
+      prev === 0 ? slides.length - 1 : prev - 1
+    )
+  }
+
+  //  CTA
   const handleShopNow = () => {
     const el = document.getElementById('products')
     if (el) {
@@ -27,24 +61,45 @@ export default function Hero(){
   }
 
   return (
-    <section className="hero section">
+    <section
+      className="hero section"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
 
-      {images.map((img, index) => (
+      {/*  Background Images */}
+      {slides.map((slide, index) => (
         <img
           key={index}
-          src={img}
-          alt="Fresh farm produce"
+          src={slide.image}
+          alt={slide.title}
           className={`hero-bg ${index === currentIndex ? 'active' : ''}`}
         />
       ))}
 
       <div className="hero-overlay"></div>
 
-      <div className="hero-inner container">
-        <h1>Fresh Produce, Directly From the Farm</h1>
-        <p>Organic • Sustainable • Healthy</p>
-        <button className="btn" onClick={handleShopNow}>Shop Now</button>
+      {/*  Content */}
+      <div key={currentIndex} className="hero-inner container">
+        <h1>{slides[currentIndex].title}</h1>
+        <p>{slides[currentIndex].text}</p>
+        <button className="btn" onClick={handleShopNow}>
+           Explore Products
+        </button>
       </div>
+
+
+      {/*  Dots */}
+      <div className="dots">
+        {slides.map((_, index) => (
+          <span
+            key={index}
+            className={index === currentIndex ? 'dot active' : 'dot'}
+            onClick={() => setCurrentIndex(index)}
+          />
+        ))}
+      </div>
+
     </section>
   )
 }

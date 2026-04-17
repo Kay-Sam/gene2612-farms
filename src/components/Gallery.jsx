@@ -28,7 +28,7 @@ export default function Gallery() {
     <section className="gallery section">
       <div className="container">
         <h2>Gallery</h2>
-        <div className="gallery-grid">
+        <div className="gallery-grid fade-in">
           {galleryImages.map((img, idx) => (
             <div className="gallery-card" key={idx} onClick={() => openModal(idx)}>
               <img src={img.src} alt={img.alt} />

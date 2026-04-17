@@ -11,6 +11,7 @@ import Footer from './components/Footer.jsx'
 import Toast from './components/Toast.jsx'
 import Cart from './components/Cart.jsx'
 import FloatingButtons from './components/FloatingButtons.jsx' 
+import './styles/animations.css'
 
 export default function App() {
   const [showCart, setShowCart] = useState(false)

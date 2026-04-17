@@ -1,7 +1,15 @@
 .products{
-  padding:80px 24px;
+  padding:30px 14px;
+  background-color: #fff;
 }
-
+.products h2{
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #0f172a;
+  position: relative;
+}
 .products .grid{ 
   display:flex; 
   gap:24px; 
@@ -25,8 +33,7 @@
 
 .products .card:hover{
   transform:translateY(-8px);
-  border-color:rgba(16,185,129,0.3);
-  background:rgba(255,255,255,0.12);
+
 }
 
 .products .thumb{ 
@@ -57,11 +64,11 @@
 
 .products h3{ 
   margin:0 0 8px;
-  color:#e2e8f0;
+  color:#333;
 }
 
 .products p{
-  color:var(--muted);
+  color:#333;
   font-size:0.9rem;
   margin:0 0 12px;
   
@@ -89,7 +96,7 @@
 }
 
 .btn-notify {
-  background: linear-gradient(135deg, #3bf679, #46bd50) !important;
+  background: linear-gradient(135deg, #0b5337, #11633d) !important;
   display: flex;
   align-items: center;
   justify-content: center;

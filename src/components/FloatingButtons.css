@@ -3,12 +3,12 @@
   bottom: 24px;
   right: 24px;
   display: flex;
+  background: transparent;
   flex-direction: column;
   gap: 12px;
   z-index: 999;
   animation: slideIn 0.4s ease forwards;
   opacity: 0; /* start invisible */
-  overflow: hidden;
 }
 
 @keyframes slideIn {
