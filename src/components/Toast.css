@@ -21,14 +21,13 @@
 }
 
 .toast-success {
-  border-color: rgba(16, 185, 129, 0.3);
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(3, 43, 30, 0.703);
   color: #a7f3d0;
 }
 
 .toast-error {
   border-color: rgba(239, 68, 68, 0.3);
-  background: rgba(239, 68, 68, 0.1);
+  background: rgba(145, 28, 28, 0.715);
   color: #fca5a5;
 }
 
