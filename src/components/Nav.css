@@ -174,7 +174,7 @@
 .nav-links.mobile li a {
   display: block;
   padding: 18px 20px;
-  color: var(--muted);
+  color: #e2e8f0;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.18s ease;
