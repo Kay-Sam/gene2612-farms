@@ -1,8 +1,8 @@
 .cart-page {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.84);
+  backdrop-filter: blur(6px);
   z-index: 2000;
   display: flex;
   align-items: center;
@@ -108,7 +108,7 @@
 
 .cart-empty-state p {
   margin: 0 0 32px;
-  color: var(--muted);
+  color: #e2e8f0;
   font-size: 1rem;
   max-width: 400px;
 }
@@ -153,7 +153,7 @@
 
 .section-header h2 {
   margin: 0;
-  color: #e2e8f0;
+  color: #f2f7fd;
 }
 
 .clear-btn {
@@ -217,7 +217,7 @@
 
 .item-desc {
   margin: 0 0 8px;
-  color: var(--muted);
+  color: #e2e8f0;
   font-size: 0.9rem;
 }
 
@@ -237,7 +237,7 @@
 }
 
 .item-quantity label {
-  color: var(--muted);
+  color: #e2e8f0;
   font-size: 0.8rem;
   font-weight: 600;
 }
@@ -340,7 +340,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 0;
-  color: var(--muted);
+  color: #e2e8f0;
   font-size: 0.95rem;
 }
 
