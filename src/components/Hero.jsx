@@ -9,13 +9,13 @@ export default function Hero() {
 const slides = [
   {
     image: hero1,
-    title: "Good for You, Good for the Planet",
-    text: "Naturally grown and harvested daily"
+    title: "Organic Farm Produce You Can Trust",
+    text: "Sweet, healthy, and chemical-free"
   },
   {
     image: hero2,
-    title: "Organic Farm Produce You Can Trust",
-    text: "Sweet, healthy, and chemical-free"
+        title: "Good for You, Good for the Planet",
+    text: "Naturally grown and harvested daily"
   },
   {
     image: hero3,
@@ -33,7 +33,7 @@ const slides = [
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % slides.length)
-    }, 4000)
+    }, 3000)
 
     return () => clearInterval(interval)
   }, [isPaused, slides.length])
